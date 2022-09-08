@@ -1,0 +1,150 @@
+@import "../variables";
+
+.form-card {
+  display: flex;
+  align-items: center;
+  max-width: 958px;
+
+  margin: 0 auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      text-transform: uppercase;
+      letter-spacing: 2.2px;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    input {
+      border: 2px solid $input;
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+
+    .form-control {
+      padding-bottom: 10px;
+    }
+
+    .card-number,
+    .card-name {
+      width: 381px;
+      height: 45px;
+      border-radius: 10px;
+      padding: 15px;
+      margin-top: 10px;
+    }
+
+    .exp-cvc {
+      display: flex;
+
+      .exp-input {
+        display: flex;
+
+        .card-expire {
+          width: 80px;
+          height: 45px;
+          margin-right: 15px;
+          margin-top: 10px;
+          padding: 10px;
+        }
+      }
+
+      .cvc {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        .card-cvc {
+          height: 45px;
+          width: 80px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  button {
+    margin-top: 35px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    font-family: $font;
+    font-size: 1.1rem;
+    background-color: $button-bg;
+    color: $white;
+    cursor: pointer;
+		transition: all 0.3s;
+		
+  }
+
+  button:hover,
+  button:active {
+    background-color: $button-bg;
+		transform: scale(1.05);
+		
+	}
+
+  button:disabled,
+  button:disabled:hover,
+  button:disabled:active {
+    background-color: #ccc;
+    color: #292929;
+    border-color: #ccc;
+    cursor: not-allowed;
+		transform: scale(1);
+  }
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+
+  input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+  }
+}
+
+.error-text {
+  color: #db4e4e;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.modal-content {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 1.4;
+	background: $white;
+	padding: 40px;
+	border-radius: 10px;
+	width: 450px;
+	text-align: center;
+	
+
+	h2 {
+		text-transform: uppercase;
+		letter-spacing: 2.7px;
+		padding: 15px;
+	}
+
+	p {
+		color: $para;
+	}
+
+	.modal-btn {
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.form-card {
+		flex-direction: column;
+	}
+}

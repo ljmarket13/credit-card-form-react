@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap');
+
+// attributes
+
+$cc-width-desk: 447px;
+$cc-height-desk: 245px;
+
+// background
+
+$cc-front-background: url(./images/bg-card-front.png);
+$cc-back-background: url(./images/bg-card-back.png);
+$desktop-bg: url(./images/bg-main-desktop.png);
+$mobile-bg: url(./images/bg-main-mobile.png);
+$modal-bg: rgba(49,49,49,0.8);
+
+// font
+
+$font: "Space Grotesk", sans-serif;
+
+// colors
+
+$white:hsl(0, 0%, 100%);
+$button-bg: hsl(278, 68%, 11%);
+$input: hsl(270, 3%, 87%);
+$para:  hsl(279, 6%, 55%);

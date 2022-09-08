@@ -1,10 +1,14 @@
 import './App.scss';
-import CreditCard from './components/CreditCard';
+import FormCard from './components/FormCard';
+import FrontCard from './components/FrontCard';
+// import CreditCard from './components/CreditCard';
 
 function App() {
   return (
     <div className="App">
-			<CreditCard />
+			{/* <CreditCard /> */}
+			{/* <FrontCard /> */}
+			<FormCard />
     </div>
   );
 }

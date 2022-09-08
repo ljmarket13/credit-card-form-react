@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
+.form-card {
+  display: flex;
+  align-items: center;
+  max-width: 958px;
+  margin: 0 auto;
+}
+.form-card form {
+  display: flex;
+  flex-direction: column;
+}
+.form-card form label {
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.form-card form input {
+  border: 2px solid hsl(270deg, 3%, 87%);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+.form-card form .form-control {
+  padding-bottom: 10px;
+}
+.form-card form .card-number,
+.form-card form .card-name {
+  width: 381px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+}
+.form-card form .exp-cvc {
+  display: flex;
+}
+.form-card form .exp-cvc .exp-input {
+  display: flex;
+}
+.form-card form .exp-cvc .exp-input .card-expire {
+  width: 80px;
+  height: 45px;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.form-card form .exp-cvc .cvc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.form-card form .exp-cvc .cvc .card-cvc {
+  height: 45px;
+  width: 80px;
+  padding: 10px;
+}
+.form-card button {
+  margin-top: 35px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form-card button:hover,
+.form-card button:active {
+  background-color: hsl(278deg, 68%, 11%);
+  transform: scale(1.05);
+}
+.form-card button:disabled,
+.form-card button:disabled:hover,
+.form-card button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+  transform: scale(1);
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+.invalid input input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  color: #db4e4e;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: hsl(0deg, 0%, 100%);
+  padding: 40px;
+  border-radius: 10px;
+  width: 450px;
+  text-align: center;
+}
+.modal-content h2 {
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  padding: 15px;
+}
+.modal-content p {
+  color: hsl(279deg, 6%, 55%);
+}
+.modal-content .modal-btn {
+  width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+  .form-card {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=FormCard.css.map */

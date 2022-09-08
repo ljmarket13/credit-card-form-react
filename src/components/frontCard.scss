@@ -1,0 +1,103 @@
+@import "../variables";
+
+
+
+.card {
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+
+  &__front {
+    background-image: $cc-front-background;
+    width: $cc-width-desk;
+    height: $cc-height-desk;
+		border-radius: 10px;
+		box-shadow: 10px 20px 70px rgb(43, 43, 43);
+
+    .logo {
+      display: flex;
+      position: relative;
+      align-items: center;
+      top: 20px;
+      left: 25px;
+
+      .big-logo {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50px;
+        margin-right: 20px;
+      }
+
+      .small-logo {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #fff;
+        border-radius: 50px;
+      }
+    }
+
+    .number {
+      font-size: 1.7rem;
+      color: $white;
+      position: relative;
+      top: 30%;
+      margin-left: 25px;
+      letter-spacing: 5px;
+    }
+
+    .name-exp {
+      display: flex;
+      color: $white;
+      justify-content: space-between;
+      margin: 0 25px;
+      position: relative;
+      top: 40%;
+
+      .name,
+      .expire {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__back {
+    background-image: $cc-back-background;
+		width: $cc-width-desk;
+		height: $cc-height-desk;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 57px;
+		border-radius: 10px;
+		box-shadow: 10px 20px 70px rgb(43, 43, 43);
+
+    .cvc {
+      position: absolute;
+      top: 108px;
+      right: 55px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+
+
+	.card {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+
+
+		&__front {
+			
+		}
+
+		&__back {
+
+		}
+	}
+}

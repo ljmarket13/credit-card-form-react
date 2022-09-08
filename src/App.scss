@@ -1,5 +1,30 @@
+@import "variables";
+// @import "react-credit-cards-2/lib/styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: $font;
+	font-size: 18px;
+	font-weight: 500;
+	height: 100vh;
+	background: $desktop-bg no-repeat;
+	background-size: 30% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		background: $mobile-bg no-repeat;
+		background-size: 100% 30%;
+	}
+	
+}
+

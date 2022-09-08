@@ -1,7 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-/*# sourceMappingURL=App.css.map */
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100vh;
+  background: url(./images/bg-main-desktop.png) no-repeat;
+  background-size: 30% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    background: url(./images/bg-main-mobile.png) no-repeat;
+    background-size: 100% 30%;
+  }
+}/*# sourceMappingURL=App.css.map */
